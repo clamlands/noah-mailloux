@@ -1,0 +1,24 @@
+@font-face {
+    font-family: Dosis;
+    src: url(./fonts/Dosis.woff2);
+  }
+
+  @font-face {
+    font-family: Montserrat;
+    src: url(./fonts/Montserrat.woff2);
+  }
+
+  @font-face {
+    font-family: Quicksand;
+    src: url(./fonts/Quicksand.woff2);
+  }
+
+  @font-face {
+    font-family: LibreBaskerville;
+    src: url(./fonts/LibreBaskerville.woff2);
+  }
+
+  @font-face {
+    font-family: Nunito;
+    src: url(./fonts/Nunito.woff2);
+  }

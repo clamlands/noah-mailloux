@@ -1,0 +1,152 @@
+/* ----------- MOBILE -----------*/
+.active.teal{
+  color: teal !important;
+}
+
+.active.blue{
+  color: deepskyblue !important;
+}
+
+.active.purple{
+  color: magenta !important;
+}
+
+.active.green{
+  color: springgreen !important;
+}
+
+.active.pink{
+  color: hotpink !important;
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--background);
+  color: white;
+  align-items: center;
+  padding: 5px 20px;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  box-sizing: border-box;
+  height: 55px;
+  border-bottom: 1px solid gray;
+  margin-bottom: 15px;
+  z-index: 1;
+}
+
+.noah-mailloux{
+  text-decoration: none;
+  color: white;
+  font-family: Dosis;
+  font-size: 18px;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+
+.menu{
+  display: flex;
+  background-color: black;
+  flex-flow: column nowrap;
+  gap: 20px;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 36px 0 0 36px; 
+  transition: ease-out .25s;
+  left: -100vw;
+}
+
+.menu.open {
+  left: 0;
+}
+
+.burger{
+  height: 2rem;
+  width: 2rem;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  z-index: 2;
+}
+
+.burger-bar{
+  width: 2rem;
+  height: 0.25rem;
+  background-color: white;
+  border-radius: 10px;
+  transform-origin: left center;
+}
+
+.nav-link{
+  text-decoration: none;
+  color: white;
+  font-family: Dosis;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+  /* ----- animations--------- */
+/* open */
+.burger-bar.open:nth-child(1){
+    transform: rotate(45deg) translate(-2px, -1px);
+    transition: ease-out 0.5s;
+}
+
+.burger-bar.open:nth-child(2){
+    opacity: 0;
+    transition: ease-out 0.5s;
+}
+
+.burger-bar.open:nth-child(3){
+    transform: rotate(-45deg) translate(0, -1px);
+    transition: ease-out 0.5s;
+}
+
+/* closed */
+.burger-bar.closed {
+    transform: rotate(0) translate(0);
+    transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s;
+}
+
+/* ----------- DESKTOP -----------*/
+@media (min-width: 768px){
+  .burger{
+    display: none;
+  }
+  
+  .nav-link{
+    transition: all .50s ease;
+  }
+
+  .nav-link.teal:hover{
+    color: teal;
+  }
+
+  .nav-link.blue:hover{
+    color: deepskyblue;
+  }
+
+  .nav-link.purple:hover{
+    color: magenta;
+  }
+
+  .nav-link.green:hover{
+    color: springgreen;
+  }
+
+  .nav-link.pink:hover{
+    color: hotpink;
+  }
+
+  .menu{
+    display: flex;
+    flex-flow: row wrap;
+    width: auto;
+    height: auto;
+    position: static;
+    padding: 0;
+  }
+}

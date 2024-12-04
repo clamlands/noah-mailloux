@@ -1,38 +1,347 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html {
+  overflow-y:scroll;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body{
+  font-family: Nunito;
+  background-color: var(--background);
+  color: white;
+  /* --background: rgba(0, 0, 0, 0.92); */
+  --background: rgb(10, 10, 10);
+  font-size: 21px;
+  --border: rgba(247,247,247,0.3);
 }
 
-.App-header {
-  background-color: #282c34;
+#root{
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* main{
+  animation: fadeInAnimation ease .75s;
+} */
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/*----------HTML TAGS----------*/
+h1{
+  margin-bottom: 32px;
+  font-family: Dosis;
+}
+
+h2{
+  margin-bottom: 24px;
+    font-family: Dosis;
+}
+
+main{
+  padding: 0 15px;
+  flex-grow: 1;
+  max-width: 1024px;
+  width: 100%;
+}
+
+a{
+  color: inherit;
+}
+
+img{
+  width: 100%;
+  height: auto;
+}
+
+footer{
+  background-color: black;
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  padding: 10px;
+  justify-content: space-between;
+  border-top: 1px solid gray;
+  width: 100%;
+  margin-top: 15px;
+}
+
+/*----------CLASSES----------*/
+.about-text p + *{
+  margin-top: 1.2em;
+}
+
+.no-underline{
+  text-decoration: none;
+}
+
+.blue{
+  color: deepskyblue;
+  text-decoration: none;
+}
+
+.purple{
+  color: magenta;
+  text-decoration: none;
+}
+
+.green{
+  color: springgreen;
+  text-decoration: none;
+}
+
+.pink{
+  color: hotpink;
+  text-decoration: none;
+}
+
+.red{
+  color: red;
+  text-decoration: none;
+}
+
+.home-cards{
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.home-card{
+  width: 100%;
+  height: 200px;
+  background-color: darkcyan;
+}
+
+.home-pic{
+  margin-top: -15px;
+}
+
+.about-flip{
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.icon{
+  height: 20px;
+  width: 20px;
+  vertical-align: bottom;
+}
+
+.youtube{
+  aspect-ratio: 16/9;
+}
+
+/*----------Upcoming Shows----------*/
+.show{
+  margin-bottom: 20px;
+  border-bottom: 1px dotted gray;
+}
+
+.time{
+  font-style: italic;
+}
+
+.summary{
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1;
+}
+/*---------------------------------*/
+
+/*----------Audio Player----------*/
+.track{
+  margin: 25px 0;
+}
+
+.rhap_container{
+  background-color: rgb(88, 88, 88) !important;
+  border-radius: 8px;
+}
+
+.rhap_time{
+  color: white !important;
+}
+
+.rhap_button-clear{
+  color: white !important;
+}
+
+.rhap_progress-indicator, .rhap_volume-indicator, .rhap_progress-filled{
+  background-color: white !important;
+  opacity: 1 !important;
+}
+
+.rhap_download-progress, .rhap_progress-bar{
+  background-color: #404040 !important;
+}
+/*---------------------------------*/
+.project-cards{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding: 1px 0;
+  width: 100vw;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.project-card{
+  padding: 15px 15px 10px 15px;
+  background-color: var(--background);
+  border: 1px solid var(--border);
+}
+
+.project-card-img{
+  border: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.project-card-img:hover{
+  transition: all .25s ease;
+  opacity: .7;
+}
+
+.project-card-text{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.dev-features{
+  margin-left: 15px;
+}
+
+.dev-info-top{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dev-info-text p + *{
+  margin-top: 1.2em;
+}
+
+.mobile-full-width{
+  margin-left: -15px;
+  margin-right: -15px;
+  width: 100vw;
+}
+
+.margin-top-med{
+  margin-top: 100px;
+}
+
+.margin-bottom-med{
+  margin-bottom: 100px;
+}
+
+.margin-bottom-small{
+  margin-bottom: 50px;
+}
+
+.margin-top-small{
+  margin-top: 50px;
+}
+
+.margin-bottom-small-mobile{
+  margin-bottom: 50px;
+}
+
+/*----------Single div----------*/
+.single-background{
+  height: 300px;
+  width: 300px;
+  background-color: white;
+}
+
+.single{
+  height: 20px;
+  width: 50px;
+  background-color: blue;
+}
+
+/*----------DESKTOP----------*/
+@media (min-width: 768px){
+  .project-cards{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-auto-rows: max-content;
+    gap: 40px;
+    padding: 1px;
+    margin-left: 0;
+    margin-right: 0;
   }
-  to {
-    transform: rotate(360deg);
+
+  .project-card{
+    margin-bottom: 0;
+    border: 1px solid var(--border);
+    font-size: 14px;
+  }
+
+  .project-card h3{
+    font-size: 20px;
+  }
+
+  .blank{
+    background-color: var(--background);
+    margin-right: -1px;
+    margin-bottom: -1px;
+  }
+
+  .about{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px
+  }
+
+  .home-pic, .comedy-pic, .music-pic, .dev-pic{
+    width: 100%;
+    mask-image: linear-gradient(to right, transparent 0%, black 1%, black 99%, transparent 100%);
+  }
+
+  .home-pic{
+    margin-top: 0;
+  }
+
+  .about-text{
+    align-self: center;
+  }
+
+  .mobile-full-width{
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+  }
+
+  .margin-bottom-small-mobile{
+    margin-bottom: 0;
+  }
+
+  .recordings{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .track{
+    margin: 0;
+  }
+
+  .contact{
+    text-align: center;
   }
 }
+
