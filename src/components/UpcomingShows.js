@@ -22,7 +22,7 @@ export default function UpcomingShows({ shows, setShows }) {
           {item.start.dateTime && (
             <div className="time">{convertDate(item.start.dateTime)}</div>
           )}
-          {item.summary && <h3 className="summary">{item.summary}</h3>}
+          {item.summary && <div className="summary">{item.summary}</div>}
           {item.location && (
             <div>{item.location.substring(0, item.location.length - 11)}</div>
           )}
@@ -65,7 +65,7 @@ export default function UpcomingShows({ shows, setShows }) {
   }
 
   return (
-    <section className="shows">
+    <section className="shows margin-bottom-med">
       <h2 className="blue">Upcoming Shows</h2>
       {shows.length ? mapItems() : ""}
     </section>

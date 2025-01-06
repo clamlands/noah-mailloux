@@ -14,8 +14,7 @@ export default function Shows() {
   };
   return (
     <main>
-      <h1 className="purple">Music</h1>
-      <div className="about margin-bottom-med">
+      <div className="about margin-bottom-med margin-top-small">
         <img
           src={noah5}
           alt="Noah"
@@ -35,7 +34,6 @@ export default function Shows() {
           <p>I also teach piano lessons for students of all ages.</p>
         </div>
       </div>
-      <h2 className="purple">Solo Piano</h2>
       <YouTube
         videoId="eb-XJIiS3OU"
         opts={opts}
@@ -50,7 +48,7 @@ export default function Shows() {
         videoId="i0UJ2ZLiHzQ"
         opts={opts}
         loading="lazy"
-        className="mobile-full-width youtube margin-top-med"
+        className="mobile-full-width youtube margin-top-med margin-bottom-med"
       />
       {/* <h2>Ideas</h2>
       <h2>Bits</h2>

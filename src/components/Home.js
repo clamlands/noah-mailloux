@@ -7,8 +7,8 @@ export default function Homepage() {
     window.scrollTo(0, 0);
   }, []);
   return (
-    <main>
-      <div className="about margin-bottom-small">
+    <main className="home">
+      <div className="about">
         <img
           src={noah4}
           alt="Noah"

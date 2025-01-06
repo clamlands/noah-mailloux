@@ -1,39 +1,51 @@
-import React from "react";
-import { Link } from "react-router-dom";
-
-export default function ProjectCard({ img, title, localLink, liveLink }) {
-  const local = `/dev/${localLink}`;
-  return (
-    <div>
-      <div className="project-card">
-        <a href={liveLink} target="_blank" rel="noreferrer">
+export default function ProjectCard({
+  img,
+  title,
+  liveLink,
+  text,
+  infoPageArray,
+  setInfoPageArray,
+  index,
+}) {
+  if (!liveLink) {
+    return (
+      <div
+        onClick={() => {
+          updatePageInfoArray();
+        }}
+      >
+        <div className="project-card">
           <img
             src={img}
             alt=""
             className="project-card-img"
-            width="750"
+            width="500"
             height="500"
           />
-        </a>
-        <a
-          href={liveLink}
-          className="no-underline"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <h3>{title}</h3>
-        </a>
-
-        <div className="project-card-text">
-          <Link to={local}>
-            <div>Read about</div>
-          </Link>
-
-          <a href={liveLink} target="_blank" rel="noreferrer">
-            Go to live site
-          </a>
+          <div>{title}</div>
         </div>
       </div>
-    </div>
-  );
+    );
+  } else {
+    return (
+      <a
+        href={liveLink}
+        target="_blank"
+        rel="noreferrer"
+        className="no-underline"
+      >
+        <div className="project-card">
+          <img
+            src={img}
+            alt=""
+            className="project-card-img"
+            width="500"
+            height="500"
+          />
+          <div>{title}</div>
+          <div className="project-card-text">{text}</div>
+        </div>
+      </a>
+    );
+  }
 }

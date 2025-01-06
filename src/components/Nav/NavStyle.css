@@ -39,15 +39,12 @@ header{
 .noah-mailloux{
   text-decoration: none;
   color: white;
-  font-family: Dosis;
   font-size: 18px;
-  letter-spacing: 2px;
-  font-weight: bold;
 }
 
 .menu{
   display: flex;
-  background-color: black;
+  background-color: var(--background);
   flex-flow: column nowrap;
   gap: 20px;
   position: fixed;
@@ -83,9 +80,7 @@ header{
 .nav-link{
   text-decoration: none;
   color: white;
-  font-family: Dosis;
-  font-weight: bold;
-  font-size: 18px;
+  font-size: 16px;
 }
 
   /* ----- animations--------- */

@@ -15,8 +15,7 @@ export default function Comedy({ shows, setShows }) {
   };
   return (
     <main>
-      <h1 className="blue">Comedy</h1>
-      <div className="about about-flip margin-bottom-med">
+      <div className="about about-flip margin-bottom-med margin-top-small">
         <div className="about-text">
           {/* <p>
             Noah Mailloux is a comic from Madison, Wisconsin known for his
@@ -59,7 +58,6 @@ export default function Comedy({ shows, setShows }) {
           height="1193"
         />
       </div>
-      <h2 className="blue">Stand-up</h2>
       <YouTube
         videoId="FzSgMFVobT0"
         opts={opts}
@@ -68,7 +66,7 @@ export default function Comedy({ shows, setShows }) {
       <YouTube
         videoId="ektxw1bIndA"
         opts={opts}
-        className="margin-bottom-small youtube"
+        className="mobile-full-width margin-bottom-small youtube"
       />
       <UpcomingShows shows={shows} setShows={setShows} />
     </main>
