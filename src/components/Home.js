@@ -1,4 +1,5 @@
-import noah4 from "../images/final/noah4-800.webp";
+import noah1 from "../images/final/noah1-800.webp";
+import noah2 from "../images/me.jpg";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
 
@@ -10,7 +11,7 @@ export default function Homepage() {
     <main className="home">
       <div className="about">
         <img
-          src={noah4}
+          src={noah2}
           alt="Noah"
           className="home-pic mobile-full-width margin-bottom-small-mobile"
           width="795"
@@ -19,24 +20,20 @@ export default function Homepage() {
         <div className="about-text">
           <p>Howdy!</p>
           <p>
-            My name is Noah and I am a{" "}
-            <Link to="/comedy" className="blue">
+            My name is Noah Mailloux and I am a{" "}
+            <Link to="/comedy" className="blue home-link-blue">
               stand-up comedian
             </Link>
             ,{" "}
-            <Link to="/music" className="purple">
-              musician
+            <Link to="/music" className="purple home-link-purple">
+              piano player
             </Link>
-            , and{" "}
-            <Link to="/dev" className="green">
-              web developer/designer{" "}
-            </Link>
-            based in Madison, WI.
+            {/* <Link to="/dev" className="green home-link-green">
+              web developer/designer
+            </Link>{" "} */}
+            , and electrical engineer based in Minneapolis, MN.
           </p>
-          <p>
-            If I'm not doing any of the things above, I'm probably rock climbing
-            or playing Runescape.
-          </p>
+          <p>Sometimes I rock climb or play Runescape.</p>
         </div>
       </div>
       {/* <div className="home-cards">

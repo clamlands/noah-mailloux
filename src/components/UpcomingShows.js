@@ -8,6 +8,7 @@ export default function UpcomingShows({ shows, setShows }) {
         `https://www.googleapis.com/calendar/v3/calendars/e91b4cee8a0f2a936977d28e501524d09acdf7a49e96cf72d3480fd7731b515f@group.calendar.google.com/events?key=${process.env.REACT_APP_API_KEY}&timeMin=${today}&singleEvents=True&orderBy=startTime`
       );
       const showsData = await response.json();
+      console.log(showsData);
       setShows(showsData.items);
     }
     if (shows.length === 0) {
@@ -23,9 +24,7 @@ export default function UpcomingShows({ shows, setShows }) {
             <div className="time">{convertDate(item.start.dateTime)}</div>
           )}
           {item.summary && <div className="summary">{item.summary}</div>}
-          {item.location && (
-            <div>{item.location.substring(0, item.location.length - 11)}</div>
-          )}
+          {item.location && <div>{item.location.replace(", USA", "")}</div>}
         </div>
       );
     });

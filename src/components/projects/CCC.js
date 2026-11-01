@@ -7,14 +7,10 @@ import hover from "../../images/dev/ccc/hover-pointer-crop2.png";
 import mobile from "../../images/dev/ccc/mobile-2.png";
 import mobilenav from "../../images/dev/ccc/mobile-nav-2.png";
 import mobileclip from "../../images/dev/ccc/mobile-clip.gif";
-import { useEffect } from "react";
 
 export default function CCC() {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
   return (
-    <main className="margin-top-med">
+    <article className="margin-top-med fade-in">
       <h1 className="margin-bottom-zero">Cheshire Cat Comedy</h1>
       <h3 className="margin-bottom-zero">React.js | CSS</h3>
       <a href="https://cheshirecatcomedy.com/" target="_blank" rel="noreferrer">
@@ -171,8 +167,9 @@ export default function CCC() {
         alt="Responsive Homepage"
         width="1469"
         height="1058"
-        className="img-border margin-bottom-med"
+        className="img-border"
       />
-    </main>
+      <hr />
+    </article>
   );
 }

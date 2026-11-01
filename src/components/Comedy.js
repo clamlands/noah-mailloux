@@ -38,16 +38,14 @@ export default function Comedy({ shows, setShows }) {
             Diaz.
           </p> */}
           <p>
-            Noah Mailloux is a Madison, WI based comedian who relates to crowds
-            using his honest and conversational style, with topics ranging from
-            substance abuse and relationships to totally absurd takes on
-            toothbrushes or stacking chairs. He hosts The Revolver Open Mic and
-            produces several monthly showcases with Cheshire Cat Comedy spanning
-            stand-up, improv, and music. He was selected to perform on the "Best
-            of the Fest" showcase during Madison Comedy Week in 2024. A regular
-            performer at Comedy on State and Comedy Cabin, Noah has opened for
-            nationally recognized headliners including Kevin Bozeman, Chastity
-            Washington, and Julio Diaz.
+            Noah Mailloux is a Minneapolis based comedian who relates to crowds
+            with his crude yet conversational approach. He hosts The Revolver
+            Open Mic and produces several monthly showcases with Cheshire Cat
+            Comedy spanning stand-up, improv, and music. He was selected to
+            perform on the "Best of the Fest" showcase for Madison Comedy Week.
+            A regular performer at Comedy on State and Comedy Cabin, Noah has
+            opened for nationally recognized headliners including Kevin Bozeman,
+            Chris Schlichting, and Julio Diaz.
           </p>
         </div>
         <img
@@ -59,7 +57,7 @@ export default function Comedy({ shows, setShows }) {
         />
       </div>
       <YouTube
-        videoId="FzSgMFVobT0"
+        videoId="1Y2M4JtufYc"
         opts={opts}
         className="mobile-full-width youtube margin-bottom-med"
       />

@@ -63,7 +63,7 @@ export default function Nav() {
           >
             MUSIC
           </NavLink>
-          <NavLink
+          {/* <NavLink
             to="/dev"
             onClick={() => {
               updateMenu();
@@ -71,13 +71,13 @@ export default function Nav() {
             className="nav-link green"
           >
             DEVELOPMENT
-          </NavLink>
+          </NavLink> */}
           <NavLink
             to="/contact"
             onClick={() => {
               updateMenu();
             }}
-            className="nav-link pink"
+            className="nav-link green"
           >
             CONTACT
           </NavLink>

@@ -5,14 +5,10 @@ import cockgif from "../../images/dev/cocknoodlesoup/cock-cropped-gif.gif";
 import noise from "../../images/dev/cocknoodlesoup/noise.png";
 import shows from "../../images/dev/cocknoodlesoup/shows.png";
 import calendar from "../../images/dev/cocknoodlesoup/calendar.png";
-import { useEffect } from "react";
 
-export default function CCC() {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
+export default function Soup() {
   return (
-    <main className="margin-top-med">
+    <article className="margin-top-med fade-in">
       <h1 className="margin-bottom-zero">Cocknoodlesoup</h1>
       <h3 className="margin-bottom-zero">React.js | CSS</h3>
       <a
@@ -101,7 +97,7 @@ export default function CCC() {
         Location, and Show Name for each show directly from the comedian's
         personal Google Calendar.
       </p>
-      <div className="vertical-images margin-bottom-med">
+      <div className="vertical-images">
         <img src={shows} alt="" width="513" height="758" />
         <img src={calendar} alt="" width="1080" height="1595" />
       </div>
@@ -181,6 +177,7 @@ export default function CCC() {
         <li>making the blog</li>
         <li>Paper background made with static generator</li>
       </ul> */}
-    </main>
+      <hr />
+    </article>
   );
 }

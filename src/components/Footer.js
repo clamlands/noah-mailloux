@@ -10,7 +10,7 @@ export default function Footer() {
       >
         <img src={insta} alt="Instagram" className="icon" />
       </a>
-      <div>Website by Noah Mailloux</div>
+      <div>Website made by me</div>
     </footer>
   );
 }

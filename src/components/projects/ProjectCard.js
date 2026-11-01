@@ -6,7 +6,15 @@ export default function ProjectCard({
   infoPageArray,
   setInfoPageArray,
   index,
+  refProp,
 }) {
+  function updatePageInfoArray() {
+    const tempArray = [...infoPageArray];
+    tempArray.fill(false);
+    tempArray[index] = true;
+    setInfoPageArray(tempArray);
+    refProp.current.scrollIntoView({ alignToTop: "true", behavior: "smooth" });
+  }
   if (!liveLink) {
     return (
       <div
@@ -17,7 +25,7 @@ export default function ProjectCard({
         <div className="project-card">
           <img
             src={img}
-            alt=""
+            alt={title}
             className="project-card-img"
             width="500"
             height="500"
@@ -37,7 +45,7 @@ export default function ProjectCard({
         <div className="project-card">
           <img
             src={img}
-            alt=""
+            alt={title}
             className="project-card-img"
             width="500"
             height="500"

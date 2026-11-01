@@ -24,14 +24,15 @@ export default function Shows() {
         />
         <div className="about-text">
           <p>
-            With 16 years of experience as a pianist, I can play classical,
-            jazz, pop, and anything inbetween.
+            I've played piano for 17 years, and I perform for a variety of
+            events ranging from small parties to weddings to corporate
+            functions. I mainly play jazz and classical, but I'll learn anything
+            I think sounds good.
           </p>
           <p>
-            I perform for a variety of different events ranging from small
-            parties to weddings to corporate functions.
+            I also teach beginner-to-advance piano lessons to students of all
+            ages.
           </p>
-          <p>I also teach piano lessons for students of all ages.</p>
         </div>
       </div>
       <YouTube

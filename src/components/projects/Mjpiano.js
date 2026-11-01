@@ -1,14 +1,10 @@
 import site from "../../images/dev/mjpiano/site.png";
 import space1 from "../../images/dev/mjpiano/space-1.png";
 import space2 from "../../images/dev/mjpiano/space-2.png";
-import { useEffect } from "react";
 
-export default function CCC() {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
+export default function MjPiano() {
   return (
-    <main className="margin-top-med">
+    <article className="margin-top-med fade-in">
       <h1 className="margin-bottom-zero">Matt Jordan's Piano Studio</h1>
       <h3 className="margin-bottom-zero">React.js | CSS</h3>
       <a
@@ -53,13 +49,7 @@ export default function CCC() {
         height="1089"
         className="margin-bottom-small"
       />
-      <img
-        src={space2}
-        alt=""
-        width="1346"
-        height="1090"
-        className="margin-bottom-med"
-      />
+      <img src={space2} alt="" width="1346" height="1090" />
       {/* <div className="dev-info-top">
         <h1 className="green">Matt Jordan's Piano Studio</h1>
         <a
@@ -92,6 +82,7 @@ export default function CCC() {
           clips and an embedded YouTube video.
         </p>
       </div> */}
-    </main>
+      <hr />
+    </article>
   );
 }

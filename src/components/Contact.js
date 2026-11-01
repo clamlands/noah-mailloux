@@ -5,7 +5,7 @@ export default function Contact() {
   }, []);
   return (
     <main className="contact">
-      <h1 className="pink">Contact</h1>
+      <h1 className="green">Contact</h1>
 
       <p>
         Send an email to <b>noah.mailloux1@gmail.com</b> or message me on{" "}
